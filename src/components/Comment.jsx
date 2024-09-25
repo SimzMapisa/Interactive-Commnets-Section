@@ -2,10 +2,12 @@ import React from 'react';
 import CommentCard from './CommentCard';
 
 const Comment = (props) => {
+	console.log(props.key);
 	return (
 		// Main Component
 		<div className='wrapper'>
 			<CommentCard
+				key={props.id}
 				name={props.name}
 				avatar={props.avatar}
 				createdAt={props.createdAt}
