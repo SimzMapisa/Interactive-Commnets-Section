@@ -6,7 +6,7 @@ const Comments = (props) => {
 
 	useEffect(() => {
 		setComments(props.comments);
-	}, [comments]);
+	}, [props.comments]);
 	return (
 		<div>
 			{comments.map((comment) => {
