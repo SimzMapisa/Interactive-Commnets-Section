@@ -14,8 +14,8 @@ const CommentCard = ({ name, createdAt, content, score, avatar }) => {
 				</div>
 
 				{/* Content wrapper */}
-				<div className='ml-4'>
-					<div className='flex items-center justify-between'>
+				<div className='ml-4 w-full'>
+					<div className='flex items-center justify-between w-full'>
 						<span className='flex items-center'>
 							<div className='w-12 h-12 mr-4 overflow-hidden rounded-full'>
 								<img className='inline-block' src={avatar} alt='' />
@@ -23,9 +23,9 @@ const CommentCard = ({ name, createdAt, content, score, avatar }) => {
 							<p className='font-bold mr-4 text-dark_blue'>{name}</p>
 							<p className='text-grayish_blue'>{createdAt}</p>
 						</span>
-						<button className='flex items-center'>
+						<button className='flex items-center justify-end'>
 							<span className='mr-2'>
-								<img src='/public/images/icon-reply.svg' alt='' />
+								<img src='/public/images/icon-reply.svg' alt='reply icon' />
 							</span>
 							<p className='font-medium text-moderate_blue'>Reply</p>
 						</button>
